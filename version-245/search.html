@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索 - 欧美影视在线</title>
+  <meta name="description" content="欧美影视在线影片搜索，支持按片名、地区、类型、年份和关键词查找热门影视剧集。">
+  <meta name="keywords" content="欧美视频,免费观看,在线视频,欧美电影,欧美剧集,高清视频,免费影视,热门剧集,影片搜索,电影搜索,剧集搜索">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="site-logo" href="index.html" aria-label="欧美影视在线">
+        <span class="logo-mark">欧</span>
+        <span class="logo-text">欧美影视在线</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="categories.html">分类</a>
+        <a class="nav-link" href="ranking.html">排行榜</a>
+        <a class="nav-link is-active" href="search.html">搜索</a>
+      </nav>
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="mobile-toggle" type="button" aria-label="打开移动导航" aria-controls="mobileNav" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="移动导航">
+      <a class="mobile-nav-link" href="index.html">首页</a>
+      <a class="mobile-nav-link" href="categories.html">分类</a>
+      <a class="mobile-nav-link" href="ranking.html">排行榜</a>
+      <a class="mobile-nav-link is-active" href="search.html">搜索</a>
+      <form class="mobile-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero small-page-hero">
+      <div>
+        <p class="section-kicker">影片搜索</p>
+        <h1>搜索影视内容</h1>
+        <p>输入片名、地区、年份、类型或关键词，快速定位想看的影片。</p>
+      </div>
+    </section>
+    <section class="section-shell search-page-panel">
+      <form class="search-page-form" action="search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片、地区、类型、标签" autocomplete="off" data-search-input>
+        <select data-search-type>
+          <option value="">全部类型</option>
+          <option value="电影">电影</option>
+          <option value="剧集">剧集</option>
+          <option value="动画">动画</option>
+          <option value="纪录片">纪录片</option>
+          <option value="综艺">综艺</option>
+        </select>
+        <button type="submit">搜索</button>
+      </form>
+      <div class="movie-grid category-movie-grid" id="searchResults"></div>
+      <div class="empty-state" id="searchEmpty">没有找到相关影片</div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-brand">
+        <a class="site-logo footer-logo" href="index.html">
+          <span class="logo-mark">欧</span>
+          <span class="logo-text">欧美影视在线</span>
+        </a>
+        <p>欧美在线视频免费观看网站，汇聚热门欧美影视剧集，提供高清免费在线观看体验，涵盖最新电影、电视剧、纪录片等精彩内容。</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h2>热门频道</h2>
+          <div class="footer-link-grid">
+          <a href="category-euro-movies.html">欧美电影</a>
+          <a href="category-euro-series.html">欧美剧集</a>
+          <a href="category-suspense-crime.html">悬疑犯罪</a>
+          <a href="category-action-adventure.html">动作冒险</a>
+          <a href="category-romance-drama.html">爱情剧情</a>
+          <a href="category-comedy-family.html">喜剧家庭</a>
+          <a href="category-sci-fi-fantasy.html">科幻奇幻</a>
+          <a href="category-documentary-classic.html">纪录经典</a>
+          </div>
+        </div>
+        <div>
+          <h2>快捷入口</h2>
+          <div class="footer-link-grid">
+            <a href="categories.html">分类总览</a>
+            <a href="ranking.html">排行榜</a>
+            <a href="search.html">影片搜索</a>
+            <a href="index.html#latest">最新上线</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 欧美影视在线 · 热门影视剧集一网打尽</div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/search-data.js"></script>
+  <script src="./assets/js/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

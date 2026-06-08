@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全站搜索 - 日韩影视精选</title>
+  <meta name="description" content="最新日韩影视资源，免费日剧、韩剧与电影推荐，带你领略不一样的视听盛宴。提供2025年最新高清日韩影视内容，包括热门日剧、韩剧、电影等，完全免费观看。">
+  <meta name="keywords" content="最新日韩影视资源,免费日剧,韩剧推荐,电影推荐,视听盛宴,2025最新,高清在线观看,日本电视剧,韩国电视剧,亚洲影视">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="./index.html" aria-label="日韩影视精选">
+      <span>日韩影视精选</span>
+    </a>
+    <nav class="main-nav" data-main-nav>
+      <a class="" href="./index.html">首页</a>
+      <a class="" href="./categories.html">分类</a>
+      <a class="" href="./rankings.html">排行榜</a>
+      <a class="active" href="./search.html">搜索</a>
+    </nav>
+    <form class="top-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名、地区、类型" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="菜单" data-menu-toggle>☰</button>
+  </div>
+</header>
+
+<main data-search-page>
+  <section class="page-hero search-hero">
+    <div class="container">
+      <span>Search</span>
+      <h1>全站搜索</h1>
+      <p>支持按片名、类型、地区、年份、标签筛选影片。</p>
+      <form class="inline-filter search-page-form" data-search-form>
+        <input type="search" name="q" placeholder="输入片名、地区、类型、年份或标签" data-search-input aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="search-summary" data-search-summary></div>
+      <div class="movie-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="footer-logo" href="./index.html">日韩影视精选</a>
+    <p>最新日韩影视资源，免费日剧、韩剧与电影推荐，带你领略不一样的视听盛宴。提供2025年最新高清日韩影视内容，包括热门日剧、韩剧、电影等，完全免费观看。</p>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/movies-data.js" defer></script>
+<script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
